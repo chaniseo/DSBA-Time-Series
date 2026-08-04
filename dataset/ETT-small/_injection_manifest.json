@@ -1,0 +1,158 @@
+{
+  "seed": 42,
+  "config": {
+    "drop_blocks": 8,
+    "drop_block_len": [
+      6,
+      48
+    ],
+    "drop_scattered": 10,
+    "nan_point_ratio": 0.03,
+    "nan_blocks": 12,
+    "nan_block_len": [
+      3,
+      24
+    ],
+    "nan_block_cols": [
+      1,
+      4
+    ],
+    "reindex_continuous": true
+  },
+  "source": "dataset/ETT-small/ETTh1_original.csv",
+  "rows_before": 17420,
+  "rows_after": 17221,
+  "rows_dropped": 199,
+  "drop_blocks": [
+    {
+      "start_idx": 13365,
+      "len": 9
+    },
+    {
+      "start_idx": 7655,
+      "len": 33
+    },
+    {
+      "start_idx": 14792,
+      "len": 24
+    },
+    {
+      "start_idx": 12062,
+      "len": 9
+    },
+    {
+      "start_idx": 1801,
+      "len": 14
+    },
+    {
+      "start_idx": 16777,
+      "len": 28
+    },
+    {
+      "start_idx": 13127,
+      "len": 36
+    },
+    {
+      "start_idx": 13550,
+      "len": 36
+    }
+  ],
+  "nan_blocks": [
+    {
+      "start_idx": 16693,
+      "len": 4,
+      "cols": [
+        "HULL",
+        "MUFL"
+      ]
+    },
+    {
+      "start_idx": 1829,
+      "len": 9,
+      "cols": [
+        "MUFL",
+        "MULL",
+        "OT"
+      ]
+    },
+    {
+      "start_idx": 5366,
+      "len": 11,
+      "cols": [
+        "MUFL",
+        "LULL",
+        "OT"
+      ]
+    },
+    {
+      "start_idx": 2022,
+      "len": 16,
+      "cols": [
+        "HUFL",
+        "LUFL"
+      ]
+    },
+    {
+      "start_idx": 14402,
+      "len": 21,
+      "cols": [
+        "HUFL"
+      ]
+    },
+    {
+      "start_idx": 1260,
+      "len": 10,
+      "cols": [
+        "HUFL",
+        "MULL",
+        "LULL"
+      ]
+    },
+    {
+      "start_idx": 5082,
+      "len": 5,
+      "cols": [
+        "HUFL",
+        "HULL",
+        "MULL"
+      ]
+    },
+    {
+      "start_idx": 3526,
+      "len": 4,
+      "cols": [
+        "HUFL"
+      ]
+    },
+    {
+      "start_idx": 13368,
+      "len": 9,
+      "cols": [
+        "OT"
+      ]
+    },
+    {
+      "start_idx": 7442,
+      "len": 15,
+      "cols": [
+        "LULL"
+      ]
+    },
+    {
+      "start_idx": 1271,
+      "len": 17,
+      "cols": [
+        "HUFL"
+      ]
+    },
+    {
+      "start_idx": 8856,
+      "len": 14,
+      "cols": [
+        "LUFL"
+      ]
+    }
+  ],
+  "nan_cells": 3866,
+  "nan_ratio": 0.03207047873443553
+}

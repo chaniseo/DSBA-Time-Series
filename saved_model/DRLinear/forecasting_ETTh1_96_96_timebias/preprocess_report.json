@@ -1,0 +1,59 @@
+{
+  "dropped_index_columns": [
+    "Unnamed: 0"
+  ],
+  "duplicated_timestamps": 0,
+  "nan_declared": 3866,
+  "nan_after_quality_check": 6576,
+  "nan_recovered_hidden": 2710,
+  "base_step": "0 days 01:00:00",
+  "interval_kinds": {
+    "0 days 01:00:00": 17202,
+    "0 days 02:00:00": 10,
+    "0 days 10:00:00": 2,
+    "1 days 13:00:00": 2,
+    "0 days 15:00:00": 1,
+    "1 days 10:00:00": 1,
+    "1 days 01:00:00": 1,
+    "1 days 05:00:00": 1
+  },
+  "n_gaps": 18,
+  "n_segments": 19,
+  "split_rows": {
+    "train": 12054,
+    "val": 1722,
+    "test": 3445
+  },
+  "imputed_tier1_linear": 3930,
+  "imputed_tier2_seasonal": 2646,
+  "imputed_tier3_fallback": 0,
+  "nan_after_interpolation": 0,
+  "nan_interpolated": 6576,
+  "scaler": "StandardScaler",
+  "scaler_fit_rows": 12054,
+  "exclude_windows_with_nan": false,
+  "time_features": [
+    "month",
+    "day",
+    "weekday",
+    "hour"
+  ],
+  "window_counts": {
+    "train": {
+      "rows": 12054,
+      "naive_windows": 11863,
+      "usable_windows": 10173
+    },
+    "val": {
+      "rows": 1722,
+      "naive_windows": 1531,
+      "usable_windows": 956
+    },
+    "test": {
+      "rows": 3445,
+      "naive_windows": 3254,
+      "usable_windows": 2490
+    }
+  },
+  "windows_excluded_by_gap_or_nan": 3029
+}

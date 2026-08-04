@@ -1,0 +1,29 @@
+# ── 재생성 가능한 대용량 산출물 ──────────────────────────────────────────────
+# 체크포인트·예측 텐서 (총 94MB). run_experiment.py 재실행으로 복원 가능.
+*.pt
+*.npz
+
+# 데이터셋. README §1의 두 명령으로 복원 가능:
+#   curl -o dataset/ETT-small/ETTh1_original.csv <ETDataset raw URL>
+#   python inject_missing.py     (seed=42 고정 → 항상 동일한 파일 생성)
+dataset/**/*.csv
+
+# ── 커밋 대상 (요구사항 "실험 결과의 로깅 및 시각화") ─────────────────────────
+#   outputs/**/*.png              EDA 6장 + 평가 4장
+#   saved_model/**/*.json         train_history / TEST_metrics / preprocess_report
+#   notebook.ipynb                실행 출력·그림 포함
+!saved_model/**/*.json
+!outputs/**/*.png
+
+# ── 개인 학습 자료 (제출물 아님) ─────────────────────────────────────────────
+# 세미나 대비 정리 문서와 작업 일지. 과제 산출물이 아니므로 저장소에서 제외.
+PROGRESS.md
+SEMINAR_GUIDE.md
+seminar_guide.html
+understand.html
+
+# ── 기타 ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
